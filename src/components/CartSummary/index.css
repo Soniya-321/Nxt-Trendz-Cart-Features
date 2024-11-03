@@ -1,0 +1,51 @@
+/* Write your CSS here */
+.cart-summary-container {
+  display: flex;
+  flex-direction: column;
+}
+.order-total {
+  font-size: 17px;
+  color: #616e7c;
+  font-weight: bold;
+  margin: 0;
+  align-self: flex-end;
+}
+span {
+  color: #171f46;
+}
+.items-in-cart {
+  font-size: 15px;
+  color: #616e7c;
+  align-self: flex-end;
+}
+.check-btn {
+  background-color: #0b69ff;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  font-size: 13px;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .cart-summary-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .order-total {
+    font-size: 20px;
+    text-align: left;
+  }
+  .items-in-cart {
+    font-size: 17px;
+    text-align: left;
+  }
+  .check-btn {
+    width: 200px;
+  }
+}
